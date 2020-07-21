@@ -1,0 +1,2 @@
+rootProject.name='Mudra Keyboard'
+include ':app'
