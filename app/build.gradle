@@ -34,5 +34,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.github.RuiHirano:mudra_keyboard_android:master-SNAPSHOT'
+    implementation 'com.github.wearable-devices:MudraAndroidSDK:+'
+    // Bluetooth support
+    implementation 'no.nordicsemi.android:ble:2.1.1'
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.4.0'
 }
