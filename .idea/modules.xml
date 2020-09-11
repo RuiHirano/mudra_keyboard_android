@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mudra Keyboard.iml" filepath="$PROJECT_DIR$/Mudra Keyboard.iml" group="Mudra Keyboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mudra_Keyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/Mudra_Keyboard.iml" group="Mudra_Keyboard" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Mudra Keyboard/app" />
     </modules>
   </component>
