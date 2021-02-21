@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
     private  var focusKey = mutableListOf(0, 0) // focus
     private var labelText: TextView? = null
     private var inputText: TextView? = null
+    private var resetButton: Button? = null
     private var keyboard: Keyboard? = null
 
 
@@ -122,8 +123,14 @@ class MainActivity : AppCompatActivity() {
         // TextView の設定
         inputText = findViewById<TextView>(R.id.text) as TextView
         labelText = findViewById<TextView>(R.id.label) as TextView
+        resetButton = findViewById<Button>(R.id.button_reset) as Button
 
+
+        resetButton?.setOnClickListener({
+            inputText?.setText("")
+        })
     }
+
 
     private fun handlePressKey(key: Key) {
         Log.d("MainActivity", "Press Key: ${key.name}")
@@ -171,19 +178,19 @@ class MainActivity : AppCompatActivity() {
         when (gestureType) {
             GestureType.Tap -> {
                 Log.d("MainActivity", "Gesture Type: Tap (Enter)")
-                labelText?.setText("Gesture Type: Tap")
+                labelText?.setText("Gesture Type: タップ")
                 keyboard?.press()
             }
             GestureType.Index -> {
                 Log.d("MainActivity", "Gesture Type: Index (Right)")
-                labelText?.setText("Gesture Type: Index")
+                labelText?.setText("Gesture Type: 人差し指")
                 //focusKey = mutableListOf(0,1)
                 //focus()
                 keyboard?.right()
             }
             GestureType.Thumb -> {
                 Log.d("MainActivity", "Gesture Type: Thumb (Down)")
-                labelText?.setText("Gesture Type: Thumb")
+                labelText?.setText("Gesture Type: 親指")
                 keyboard?.down()
             }
         }
